@@ -19,3 +19,7 @@ FriendList.propTypes = {
     })
   ).isRequired,
 };
+
+FriendList.defaultProps = {
+  friends: [],
+};
