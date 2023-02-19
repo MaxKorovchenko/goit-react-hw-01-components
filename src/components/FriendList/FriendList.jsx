@@ -12,14 +12,14 @@ export const FriendList = ({ friends }) => {
   );
 };
 
+FriendList.defaultProps = {
+  friends: [],
+};
+
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
     })
   ).isRequired,
-};
-
-FriendList.defaultProps = {
-  friends: [],
 };

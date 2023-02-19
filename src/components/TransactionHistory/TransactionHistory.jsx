@@ -25,6 +25,10 @@ export const TransactionHistory = ({ items }) => {
   );
 };
 
+TransactionHistory.defaultProps = {
+  items: [],
+};
+
 TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
